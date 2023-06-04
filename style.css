@@ -1,54 +1,70 @@
 body{
-	background-color: #282828;
-  color: #ffffff;
-    font-family: Verdana, sans-serif;
-      margin: 0;
-      }
-	.content{
-		transform:translateY(64px);
-	}
-      div.header {
-	        position: fixed;
-		  top: 0;
-		    left: 0;
-		    display:flex;
-		    align-items:flex-start;
-	    }
-
-	    .title {
-		      font-size: 36px;
-		        font-weight: bold;
-			  padding: 12px;
-			  padding-left:24px;
-			  padding-right:24px;
-			    display: inline-block;
-		    }
-
-		    .titlebutton {
-			      width: 200px;
-			        height: 64px;
-				  display: flex;
-				    color: #ffffff;
-				      background-color: #323232;
-				        text-align: center;
-					align-items:center;
-					vertical-align:middle;
-					justify-content:center;
-				}
-
-				.titlebutton:hover {
-					  width: 250px;
-					    height: 64px;
-					    background-color: #ffffff;
-					    align-items:center;
-					    vertical-align:middle;
-					    justify-content:center;
-color: #282828;
-display: flex;
-text-align: center;
+	background-color:#282828;
+	color:#ffffff;
+	font-family:Verdana,sans-serif;
+	margin:0;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.content{
+	transform:translateY(64px);
+}
+
+div.header{
+	position:fixed;
+	top:0;
+	left:0;
+	display:flex;
+	align-items:flex-start;
+	background-color:#282828;
+}
+
+.title{
+	font-size:36px;
+	font-weight:bold;
+	padding:12px;
+	padding-left:24px;
+	padding-right:24px;
+	display:inline-block;
+}
+
+.titlebutton{
+	width:200px;
+	height:64px;
+	display:flex;
+	color:#ffffff;
+	background-color:#323232;
+	text-align:center;
+	align-items:center;
+	vertical-align:middle;
+	justify-content:center;
+}
+
+.titlebutton:hover{
+	width:250px;
+	height:64px;
+	background-color:#ffffff;
+	align-items:center;
+	vertical-align:middle;
+	justify-content:center;
+	color:#282828;
+	display:flex;
+	text-align:center;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+.image{
+	align-items:bottom;
+	text-align:center;
+	display:flex;
+	justify-content:bottom;
+	vertical-align:bottom;
+	width:100vw;
+	height:calc(100vh-64px);
+	transform:translateY(64px);
+	font-weight:bold;
+	font-size:36px;
 }
