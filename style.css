@@ -1,3 +1,4 @@
+
 body{
 	background-color:#282828;
 	color:#ffffff;
@@ -81,4 +82,15 @@ table{
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
+}
+
+.ip{
+	top:50%;
+	bottom:50;
+}
+
+.canary{
+	text-align:center;
+	color:#282828;
+	background-color:#ffe900;
 }
