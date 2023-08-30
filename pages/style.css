@@ -62,10 +62,10 @@ a:hover{
 }
 
 .footer{
-	font-size:0.5rem;
+	font-size:0.65rem;
 	background-color:#333335;
 	color:white;
-	padding:0.5rem;
+	padding:1rem;
 	width:calc(100vw - 1.5rem);
 	top:0;
 }
