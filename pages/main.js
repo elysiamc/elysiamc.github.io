@@ -1,7 +1,7 @@
 // header decision
 $(document).ready(function() {
 	if ($(window).width() > 768) {
-		$("#header").load("header/header-large.html");
+		$("#header").load("header/header-small.html");
 		} else {
 		$("#header").load("header/header-small.html");
 	}
