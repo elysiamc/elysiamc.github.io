@@ -7,7 +7,7 @@ var hamburger = false
 
 function setRandomBackground() {
     var img = Math.floor(Math.random()*12)+1;
-    var prev_img = Math.floor(Math.random()*12)+1;
+    var prev_img = Math.floor(Math.random()*17)+1;
 
     img = "res/title_imgs/title"+img+".png";
 
@@ -16,6 +16,7 @@ function setRandomBackground() {
 }
 
 function section(section) {
+  window.scrollTo(0,0);
   var sections = document.getElementsByTagName('section');
     for (var i = 0; i < sections.length; i++) {
       sections[i].style.display = 'none';
@@ -29,10 +30,12 @@ function section(section) {
   if (hamburger){
     cookTheHamburger()
   }
+
+  setRandomBackground()
 }
 
 function cookTheHamburger() {
-  hamburger=!hamburger
+  hamburger = !hamburger;
   
   if (hamburger){
     document.getElementById('hamburger').innerHTML = 'x'
@@ -46,4 +49,12 @@ function cookTheHamburger() {
 document.addEventListener('DOMContentLoaded', function() {
   setRandomBackground()
   section('home');
+});
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 768) {
+    document.querySelector('nav').style.display = 'flex';
+  } else {
+    document.querySelector('nav').style.display = 'none';
+  }
 });

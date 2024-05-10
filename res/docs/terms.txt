@@ -1,4 +1,4 @@
-Terms and Conditions of Use for Elysia MC 
+Terms of Service of Use of Elysia MC
 Effective 1 September 2023
 
 1. Acceptance of Terms
@@ -9,7 +9,7 @@ These Terms serve as an agreement between you and the Server to govern your inte
 These Terms exist for three purposes:
 1. to assert expected behaviour and rights of the users of the Server;
 2. to assert expected behaviour and rights of Elysia MC as the operator of the Server;
-3. to comply with the requirement as per the Minecraft EULA requiring servers to provide Terms and Conditions.
+3. to comply with the requirement as per the Minecraft EULA requiring servers to provide Terms of Service.
 
 3. Modifications to the Terms
 Elysia MC, as per the General Data Protection Regulation ("GDPR"), are required to inform users if the Terms are revised. By continuing your usage of the Server, you agree in whole to the revisions.
@@ -20,5 +20,5 @@ Expected behaviour and termination information can be found in the Elysia MC Rul
 5. Consent to your appearance on Elysia MC media
 By agreeing to the Terms, you consent to yourself, your Minecraft avatar, or your creations in Elysia MC media to be used by the Elysia MC administration to produce content, including audio, video, and images, for Elysia MC.
 
-5. Contact
+6. Contact
 Contact information may be found at the Contact page on the Elysia MC website.
