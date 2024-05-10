@@ -1,30 +1,149 @@
+<!--
+index.html
+Copyleft (c) 2023-2024 daysant, Elysia MC - Elysia MC Website
+This work is licensed under the terms of the AGPL v3.0-or-later
+daysant@proton.me, discord.gg/RKAf97d5Ap
+-->
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Elysia MC</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	  	<link rel="stylesheet" href="pages/style.css">
-		<base href="/pages/">
-	</head>
-	<body>
-	  	<div class="header" id="header"></div>
-	  	<div class="content">
-			Wecome to the Elysia MC website.<br>
-			<br>
-			<b>What is Elysia MC?</b><br>
-			Elysia MC functions as a modded SMP in Minecraft 1.12.2, operating on the modpack Elysia: A World Reshapen. Our objective is to create a server that fosters extensive user interaction, rich lore, as well as elements of geopolitics and warfare.<br><br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <div class="header-title">Elysia MC</div>
+	  <nav>
+		<!-- linebreaks cause some weird spacing shenanigens -->
+		<button class="header-button" onclick="section('home')">Home</button><a href="https://wiki.elysiamc.xyz"><button class="header-button">Wiki</button></a><a href="https://discord.com/invite/RKAf97d5Ap"><button class="header-button">Discord</button></a>
+	  </nav>
+    </header>
 
-			<b>What mods do you have?</b><br>
-			We have a wide variety of mods.<br>
-			You have the option to construct extensive industrial facilities using Immersive Engineering, explore outer space through Galacticraft, experiment with programming via OpenComputers, and establish a substantial military  using Flans' mod.<br><br>
-
-			<b>Is there anything else I need to do?</b><br>
-			It is recommended you join the Discord server. It contains important information and announcements. It is also a way to contact the admins and to engage with the rest of the community.
-			
+    <section id="home">
+      <div class="title-container">
+		<div class="title-background"> </div>
+        <div class="title-text">
+			<div style="font-size:4.5rem;font-weight:900;">Elysia MC</div>
+			1.12.2 modded Minecraft SMP<br>
+			play.elysiamc.xyz
 		</div>
-		<div class="footer" id="footer"></div>
+      </div>
+	  <div style="padding:1rem;">
+		Elysia MC is a Forge 1.12.2 modded Minecraft survival multiplayer server running on the Elysia: A World Reshapen modpack.<br>
+		With over a year of history, bluh bluh bluh bluh bluh i can't think of anything to put here someone write something please<br><br>
+
+		<div style="font-size:2rem;font-weight:900;">Installation</div>
+		Installation depends on your launcher. See the following links for your launcher:
+		<ul>
+			<li><a href="https://support.curseforge.com/en/support/solutions/articles/9000196984-installing-modpacks">CurseForge</a></li>
+			<li><a href="https://polymc.org/wiki/getting-started/download-modpacks/">PolyMC or Prism Launcher</a></li>
+			<li><a href="https://apexminecrafthosting.com/installing-custom-modpacks/">First-party "Vanilla" launcher</a></li>
+			<li>or, search the internet for your own launcher.</li>
+		</ul>
+		After installing Elysia: A World Reshapen, it is suggested to install Optifine for increased performance.<br>
+		Ensure your computer meets the following system requirements:<br><br>
 		
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="/pages/main.js"></script>
-	</body>
+		<style type="text/css">
+			.tg  {border-collapse:collapse;border-spacing:0;}
+			.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:1rem;
+			  overflow:hidden;padding:10px 5px;word-break:normal;}
+			.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:1rem;
+			  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+			.tg .tg-sd0v{border-color:#ffffff;font-family:inherit;text-align:left;vertical-align:top}
+			.tg .tg-skg0{border-color:#ffffff;font-family:inherit;font-weight:bold;text-align:left;vertical-align:top}
+			</style>
+			<table class="tg">
+			<thead>
+			  <tr>
+				<th class="tg-sd0v"></th>
+				<th class="tg-skg0">Minimum</th>
+				<th class="tg-skg0">Recommended</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td class="tg-sd0v">Software</td>
+				<td class="tg-sd0v" colspan="2">Java 8, Forge 1.12.2</td>
+			  </tr>
+			  <tr>
+				<td class="tg-sd0v">Operating system</td>
+				<td class="tg-sd0v" colspan="2">Any modern 64-bit desktop OS</td>
+			  </tr>
+			  <tr>
+				<td class="tg-sd0v">CPU</td>
+				<td class="tg-sd0v">Intel Core i5-5200U<br>AMD Ryzen 3 3200U</td>
+				<td class="tg-sd0v">Intel Core i7-1165G7<br>AMD Ryzen 7 6800U</td>
+			  </tr>
+			  <tr>
+				<td class="tg-sd0v">GPU</td>
+				<td class="tg-sd0v">Any modern graphics card<br>with OpenGL support</td>
+				<td class="tg-sd0v">NVIDIA GTX 750 Ti<br>AMD Radeon Vega 7<br>Intel Iris Xe</td>
+			  </tr>
+			  <tr>
+				<td class="tg-sd0v">RAM</td>
+				<td class="tg-sd0v">8 GB</td>
+				<td class="tg-sd0v">16 GB</td>
+			  </tr>
+			  <tr>
+				<td class="tg-sd0v">Storage</td>
+				<td class="tg-sd0v">250 MB HDD</td>
+				<td class="tg-sd0v">1 GB NVMe SSD</td>
+			  </tr>
+			</tbody>
+			</table>
+		
+		<div class="heading">FAQ</div>
+		This should serve as a basic guide to the most asked questions. For further details or other questions, contact the admins in the Discord.<br><br>
+
+		<div class="subheading">Can I join on mobile?</div>
+		Unfortunately not. The modpack is built for Java Edition and is quite heavy. Java ports do exist for mobile, but phones are simply not powerful enough to run it.<br><br>
+		
+		<div class="subheading">I have a problem. Where can I report it?</div>
+		It generally depends on the nature of your problem.
+		<ul>
+			<li>Problems in the Minecraft or Discord servers go to Discord staff.</li>
+			<li>Problems with the modpack itself go to the modpack developer ZeBoss07.</li>
+			<li>Problems with the website, the wiki, or the domain go to the webmaster daysant.</li>
+		</ul>
+
+		<div class="subheading">Are the modpack and server related?</div>
+		Not directly. While it is true that they have a similar name, use case, and that the developer is on Elysia's staff team, they aren't directly tied to eachother.<br><br>
+		<!-- so you say zeboss but why is there elysia smp content in the modpack -->
+
+		<div class="subheading">We will give you <em>X</em> amount of money if you do <em>Y</em>.</div>
+		Do not try to ask this. You will either be laughed at or ignored.
+
+		<div class="heading">Contact</div>
+		Staff can be contacted at the Discord server.<br>
+		The developer of this website can be contacted at daysant@proton.me.
+	  </div>
+	</div>
+
+	  <section id="licensing" style="padding:1rem;">
+		Testing, testing!
+	  </section>
+	  <footer>
+		<div class="copyleft">
+			<strong>Elysia MC</strong><br>
+			<div style="font-size:0.75rem;line-height:0.85rem;width:100%;">
+				This website is in full licensed under the terms of the <a href="licence.txt">Affero GPL v3.0-or-later</a>. <a href="https://github.com/elysiamc/elysiamc.github.io">GitHub repo</a><br>
+				Copyleft 🄯 2023 - 2024 Elysia MC. Some rights reserved.<br>
+				Website designed and developed by <a href="https://daysantace.github.io">daysant</a><br>
+				Elysia MC is unaffiliated with and not endorsed by Mojang Studios or Microsoft Corporation.
+			</div>
+		</div>
+		<div class="legal">
+			<strong>Legal</strong><br>
+			<div style="font-size:0.75rem;line-height:0.85rem;width:100%;">
+				<a onclick="section('licensing')">Licensing</a><br>
+				<a onclick="section('terms')">Terms and Conditions</a><br>
+				<a onclick="section('privacy')">Privacy policy</a><br>
+			</div>
+		</div>
+	  </footer>
+
+    <script src="main.js"></script>
+</body>
 </html>
