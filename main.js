@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (cookieExists) {
         
     } else {
-        document.cookie = 'cookiesAcknowledged=0; max-age=31536000; path=/;';
-        document.cookie = 'lightMode=0; max-age=31536000; path=/;';
+        document.cookie = 'cookiesAcknowledged=1; max-age=31536000; path=/; SameSite=Strict';
+        document.cookie = 'lightMode=1; max-age=31536000; path=/; SameSite=Strict';
     }
     
     var themeID = getCookie("lightMode")
@@ -78,21 +78,8 @@ window.addEventListener('resize', function() {
   }
 });
 
-function wipeCookies(){ // debug only
-  var cookies = document.cookie.split(";");
-
-    for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i];
-        var eqPos = cookie.indexOf("=");
-        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-        document.cookie = name + "=;expires=-1;path=/";
-    }
-    
-  return "cookies wiped"
-}
-
 function acknowledgeCookies(){
-  document.cookie = 'cookiesAcknowledged=1; max-age=31536000; path=/;';
+  document.cookie = 'cookiesAcknowledged=1; max-age=31536000; path=/; SameSite=Strict';
   document.getElementById('cookieNotice').style.display='none';
 }
 
@@ -109,7 +96,7 @@ function themeSwitch(){
     theme("0")
   }
   
-  document.cookie = `lightMode=${switchTo}; max-age=31536000; path=/;`;
+  document.cookie = `lightMode=${switchTo}; max-age=31536000; path=/; SameSite=Strict`;
 }
 
 function getCookie(name) {
