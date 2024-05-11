@@ -15,9 +15,10 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 <body>
     <header>
       <div class="header-title">Elysia MC</div>
+      <button style="height:4rem;width:4rem;" class="body-button" id="modeSwitch" onclick="themeSwitch()"></button>
       <button onclick="cookTheHamburger()" id="hamburger">
         ≡
-	  </button>
+	    </button>
 	  <nav>
 		<!-- linebreaks cause some weird spacing shenanigans -->
 		<button onclick="section('home')">Home</button><a href="https://wiki.elysiamc.xyz"><button>Wiki</button></a><a href="https://discord.com/invite/RKAf97d5Ap"><button>Discord</button></a>
@@ -56,8 +57,8 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 			  overflow:hidden;padding:10px 5px;word-break:normal;}
 			.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:1rem;
 			  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-			.tg .tg-sd0v{border-color:#ffffff;font-family:inherit;text-align:left;vertical-align:top}
-			.tg .tg-skg0{border-color:#ffffff;font-family:inherit;font-weight:bold;text-align:left;vertical-align:top}
+			.tg .tg-sd0v{border-color:var(--text-colour);font-family:inherit;text-align:left;vertical-align:top}
+			.tg .tg-skg0{border-color:var(--text-colour);font-family:inherit;font-weight:bold;text-align:left;vertical-align:top}
 			</style>
 			<table class="tg">
 			<thead>
@@ -117,7 +118,7 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 		<!-- so you say zeboss but why is there elysia smp content in the modpack -->
 
 		<div class="subheading">I'd like to buy/pay you to...</div>
-		No. Elysia MC is not-for-profit, not-for-sale, and not-for-negotiation. This decision is final and will not change under any circumstance.
+		No. Elysia MC is not for profit, not for sale, and not for negotiation. This decision is final and will not change under any circumstance.
 		
 		<br><br><br>
 		<div class="heading">Contact</div>
@@ -207,14 +208,22 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 
 	  <section id="privacy" style="padding:1rem;">
 		<div class="heading">Privacy policy</div>
-		We have not and will not collect any information about you, neither do we want to.<br><br>
-		We may use third-party services that do collect your information; you may wish to read their respective privacy policies:
+		We have not and will not collect any personally identifiable information (PID) about you, neither do we want to.<br><br>
+		We use third-party services that may collect PID. You may wish to read their respective privacy policies:
 		<ul>
 			<li><a href="https://discord.com/privacy">Discord</a></li>
 			<li><a href="https://privacy.microsoft.com/en-gb/privacystatement">Minecraft (Microsoft)</a></li>
 			<li><a href="https://meta.miraheze.org/wiki/Privacy_Policy">Miraheze (WikiTide)</a></li>
 		</ul>
-		We are not involved in the collection of this information nor can we access this information.
+		We are not involved in the collection of this information nor can we access this information.<br><br>
+		<div class="subheading">Cookies</div>
+		This website uses cookies. They do not collect any PID.<br>
+		The cookies used are as follows:
+		<ul>
+		  <li>cookiesAcknowledged - this records if you have already seen the cookie notice as to prevent it from showing every time. It is either "0" or "1".</li>
+		  <li>lightMode - this records if you have enabled or disabled light mode. It is either "0" or "1".</li>
+		</ul>
+		These are functional cookies and are thus considered essential under the GDPR. This means you cannot revoke them.
 	  </section>
 	  
 
@@ -238,6 +247,19 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 			</div>
 		</div>
 	  </footer>
+	  
+	  
+	  
+	  <div id="cookieNotice">
+	    <div class="subheading">
+	      Fresh cookies!
+	    </div>
+	    This website uses cookies. Cookies are small text files stored locally on your browser that sites can access.<br><br>
+	    
+	    Our uses for them can be seen in our <a onclick="section('privacy')">privacy policy</a>. We do not collect info.<br><br>
+	    
+	    <button class="body-button" onclick="acknowledgeCookies()">Delicious!</button>
+	  </div>
 
     <script src="main.js"></script>
 </body>
