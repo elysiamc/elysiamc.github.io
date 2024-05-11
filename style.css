@@ -11,11 +11,11 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 	--bg-colour1:#222229;
 	--bg-colour2:#1E1E24;
 	--accent:#2fa73f;
-	--header-colour:#bfe9c5;
+	--header-color:#bfe9c5;
 }
 
 ::selection{
-	color:white;
+	color:var(--text-colour);
 	background-color:var(--accent);
 }
 
@@ -36,23 +36,22 @@ body{
 
 section{
 	background-color:var(--bg-colour1);
-	color:var(--text-colour);
 }
 
 .heading{
 	font-weight:900;
 	font-size:2rem;
-	color:var(--header-colour);
+	color:var(--header-color);
 }
 
 .subheading{
 	font-weight:900;
 	font-size:1.25rem;
-	color:var(--header-colour);
+	color:var(--header-color);
 }
 
 a{
-  color:var(--accent);
+    color:var(--accent);
 	text-decoration:underline;
 }
 
@@ -64,6 +63,7 @@ a:hover{
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	background-color:rgb(0,0,0);
 	width:100vw;
 	height:50vh;
 	z-index:1;
@@ -80,7 +80,7 @@ a:hover{
 	background-image:var(--image);
 	background-repeat:no-repeat;
 	background-size:cover;
-	opacity:0.5;
+	opacity:0.35;
 }
 
 .title-container {
@@ -104,52 +104,23 @@ header{
 	justify-content:space-between;
 }
 
-#cookieNotice{
-  position:fixed;
-  padding:1rem;
-  bottom:0;
-  background-color:var(--bg-colour1);
-  width:calc(100vw);
-  box-sizing:border-box;
-}
-
-.body-button{
-	display:block;
-	padding:1rem;
-	color:var(--text-colour);
-	border:none;
-	transition:all 0.1s ease-in-out;
-	background-color:var(--bg-colour2);
-	font-family:'Ubuntu',sans-serif;
-	font-weight:500;
-	font-size:1rem;;
-}
-
-.body-button:hover{
-	color:white;
-	background-color:var(--accent);
-	transition:all 0.1s ease-in-out;
-}
-
-  .header-title{
-	  padding:1rem;
-	  font-size:2rem;
-	  font-weight:900;
-	  flex-grow:1;
-  }
-
 @media (min-width:769px){
 
   nav *{
   	height:100%;
   	width:10rem;
   	font-size:1.25rem;
+  	color:var(--text-colour);
   	background-color:var(--bg-colour2);
   	border:none;
-  	font-family:'Ubuntu';
-  	font-weight:500;
   	padding:0;
   	transition:all 0.1s ease-in-out;
+  }
+  
+  .header-title{
+	  padding:1rem;
+	  font-size:2rem;
+	  font-weight:900;
   }
   
   #hamburger{
@@ -185,7 +156,7 @@ header{
 	height:100%;
 	width:10rem;
 	font-size:1.25rem;
-	color:var(--text-colour) !important;
+	color:var(--text-colour);
 	background-color:var(--bg-colour2);
 	border:none;
 	padding:0;
@@ -193,7 +164,6 @@ header{
 }
 
 nav button:hover{
-  color:white;
 	background-color:var(--accent);
 	transition:all 0.1s ease-in-out;
 }
@@ -229,7 +199,6 @@ nav button:hover{
   }
   
   nav *:hover{
-    color:white;
     background-color:var(--accent);
     transition:all 0.1s ease-in-out;
   }
