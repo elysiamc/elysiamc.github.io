@@ -1,5 +1,5 @@
 <!--
-index.html
+dev/index.html
 Copyleft (c) 2023-2024 daysant, Elysia MC - Elysia MC Website
 This work is licensed under the terms of the AGPL v3.0-or-later
 daysant@proton.me, discord.gg/RKAf97d5Ap
@@ -14,17 +14,26 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 </head>
 <body>
     <header>
-      <div class="header-title">Elysia MC</div>
-      <button onclick="cookTheHamburger()" id="hamburger">
-        ≡
-	  </button>
-	  <nav>
-		<!-- linebreaks cause some weird spacing shenanigans -->
-		<button onclick="section('home')">Home</button><a href="https://wiki.elysiamc.xyz"><button>Wiki</button></a><a href="https://discord.com/invite/RKAf97d5Ap"><button>Discord</button></a>
-	  </nav>
+		<!-- <div class="dev-notice">This is a beta version of the Elysia MC website. Note some that features may not work.</div> -->
+		<div class="header-title">Elysia MC</div>
+		<button onclick="switchTheme()" id="themeButton" class="body-button" style="width:4rem;height:4rem;font-size:1.5rem;"></button>
+		<button onclick="cookTheHamburger()" id="hamburger">
+		≡
+		</button>
+		<nav>
+			<!-- linebreaks cause some weird spacing shenanigans -->
+			<button onclick="section('home')">Home</button><a href="https://wiki.elysiamc.xyz"><button>Wiki</button></a><a href="https://discord.com/invite/RKAf97d5Ap"><button>Discord</button></a>
+		</nav>
 	</header>
+	
 
+	<div class="cookie-notice" id="cookieNotice">
+		<div class="subheading">Fresh cookies!</div>
+		This website uses cookies and other digital storage features. These are small text files stored in your browser so that the site can remember certaint things.<br>
+		You can read about our exact uses in the <a onclick="section('privacy')">privacy policy</a>. We do not collect or track your info.<br><br>
 
+		<button class="body-button" onclick="acknowledgeCookies()">Delicious!</button>
+	</div>
 
     <section id="home">
       <div class="title-container">
@@ -35,6 +44,7 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 			play.elysiamc.xyz
 		</div>
       </div>
+
 	  <div style="padding:1rem;">
 		Elysia MC is a Forge 1.12.2 modded Minecraft survival multiplayer server running on the Elysia: A World Reshapen modpack.
 		<br><br><br>
@@ -56,8 +66,8 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 			  overflow:hidden;padding:10px 5px;word-break:normal;}
 			.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:1rem;
 			  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-			.tg .tg-sd0v{border-color:#ffffff;font-family:inherit;text-align:left;vertical-align:top}
-			.tg .tg-skg0{border-color:#ffffff;font-family:inherit;font-weight:bold;text-align:left;vertical-align:top}
+			.tg .tg-sd0v{border-color:var(--text-colour);font-family:inherit;text-align:left;vertical-align:top}
+			.tg .tg-skg0{border-color:var(--text-colour);font-family:inherit;font-weight:bold;text-align:left;vertical-align:top}
 			</style>
 			<table class="tg">
 			<thead>
@@ -207,14 +217,38 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 
 	  <section id="privacy" style="padding:1rem;">
 		<div class="heading">Privacy policy</div>
-		We have not and will not collect any information about you, neither do we want to.<br><br>
-		We may use third-party services that do collect your information; you may wish to read their respective privacy policies:
+		Effective May 12 2024<br>
+		This Privacy policy will explain what information is collected by Elysia MC ("us") from the user ("you") and how we use it.<br><br>
+
+		<div class="subheading">Information we collect</div>
+		This website uses the JavaScript <code>localStorage</code> feature. While not technically cookies, they serve a similar function.<br>
+		Browser local storage remains indefinitely in the browser unless you manually clear it. It is not possible from a technical standpoint to transfer local storage to another domain or website.<br><br>
+		
+		If you wish to see how exactly these are implemented, you can read the <a href="https://github.com/elysiamc/elysiamc.github.io">source code</a>.<br><br>
+		We have not and will not collect any personally identifiable information (PII) about you, neither do we want to.<br>
+		We do collect some minor information. They are to record as follows:<br>
+		<ol>
+			<li><code>cookiesAcknowledged</code> - whether you have acknowledged the cookies, either "0" or "1"</li>
+			<li><code>theme</code> - whether you have set the website to light mode or dark mode, either "0" or "1"</li>
+		</ol>
+		
+		<div class="subheading">How we use this information</div>
+		We use these as follows:
+		<ol>
+			<li><code>cookiesAcknowledged</code> - to decide whether to show the cookie acknowledgement banner or not</li>
+			<li><code>theme</code> - to decide whether to use light or dark mode</code></li>
+		</ol>
+		
+
+		<div class="subheading">Third parties</div>
+		We may use third-party services that do collect your PII; you may wish to read their respective privacy policies:
 		<ul>
 			<li><a href="https://discord.com/privacy">Discord</a></li>
 			<li><a href="https://privacy.microsoft.com/en-gb/privacystatement">Minecraft (Microsoft)</a></li>
 			<li><a href="https://meta.miraheze.org/wiki/Privacy_Policy">Miraheze (WikiTide)</a></li>
 		</ul>
-		We are not involved in the collection of this information nor can we access this information.
+		We are not involved in the collection of this information nor can we access this information.<br><br>
+		
 	  </section>
 	  
 

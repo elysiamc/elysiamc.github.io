@@ -7,15 +7,11 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 
 :root{
 	font-size:17px;
-	--text-colour:white;
-	--bg-colour1:#222229;
-	--bg-colour2:#1E1E24;
 	--accent:#2fa73f;
-	--header-color:#bfe9c5;
 }
 
 ::selection{
-	color:var(--text-colour);
+	color:white;
 	background-color:var(--accent);
 }
 
@@ -44,6 +40,7 @@ body{
 	background-color:var(--bg-colour2);
 	font-family:'Ubuntu',sans-serif;
 	font-weight:500;
+	transition:all 0.1s ease-in-out;
 }
 
 section{
@@ -53,13 +50,13 @@ section{
 .heading{
 	font-weight:900;
 	font-size:2rem;
-	color:var(--header-color);
+	color:var(--header-colour);
 }
 
 .subheading{
 	font-weight:900;
 	font-size:1.25rem;
-	color:var(--header-color);
+	color:var(--header-colour);
 }
 
 a{
@@ -75,7 +72,6 @@ a:hover{
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	background-color:rgb(0,0,0);
 	width:100vw;
 	height:50vh;
 	z-index:1;
@@ -92,7 +88,8 @@ a:hover{
 	background-image:var(--image);
 	background-repeat:no-repeat;
 	background-size:cover;
-	opacity:0.35;
+	transition:background-image 1s ease-in-out;
+	opacity:0.5;
 }
 
 .title-container {
@@ -154,6 +151,7 @@ header{
 	background-color:var(--bg-colour2);
 	height:4rem;
 	display:flex;
+	flex-direction: row;
 	justify-content:space-between;
 	position:sticky;
 	top:0;
@@ -164,6 +162,7 @@ header{
 	padding:1rem;
 	font-size:2rem;
 	font-weight:900;
+	flex-grow:1;
 }
 
 .header-button{
@@ -180,12 +179,34 @@ header{
 
 nav button:hover{
 	background-color:var(--accent);
+	color:white;
 	transition:all 0.1s ease-in-out;
-	width:12rem;
+}
+
+.body-button{
+	border:none;
+	padding:1rem;
+	font-size:1rem;
+	color:var(--text-colour);
+	background-color:var(--bg-colour2);
+	transition:all 0.1s ease-in-out;
+}
+
+.body-button:hover{
+	background-color:var(--accent);
+	color:white;
+	transition:all 0.1s ease-in-out;
 }
 
 }
 
+.cookie-notice{
+	position:fixed;
+	bottom:0;
+	padding:1rem;
+	background-color:var(--bg-colour1);
+	width:100vw;
+}
 @media (max-width:768px){
     .header-title{
 	    padding:1rem;
