@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elysia MC Debug</title>
+  <style>
+  body{
+    color: white;
+    background-color: black;
+  }
+  </style>
+</head>
+<body>
+  <h2>Debug panel</h2>
+  <div style="color:red;font-weight:bold;">WARNING! This should only be accessed for development purposes. If you are not a developer, please return to the <a style="color:red;" href="/index.html">home page</a>.</div><br>
+  
+  <div>
+    <a onclick=wipeData()>Wipe localStorage</a>
+    <div id="wipeData"></div>
+  </div>
+  <br>
+  <div>
+    <a onclick=showData()>Display localStorage</a>
+    <div id="showData"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

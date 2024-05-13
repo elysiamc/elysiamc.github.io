@@ -24,6 +24,8 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
 	border:none;
 	padding:1rem;
 	font-size:1rem;
+	font-family:'Ubuntu';
+	font-weight:500;
 	color:var(--text-colour);
 	background-color:var(--bg-colour2);
 	transition:all 0.1s ease-in-out;
@@ -205,8 +207,10 @@ header{
 		box-sizing: border-box;
 		background-color:var(--bg-colour1);
 		width:100vw;
+		z-index:7;
 	}
 }
+
 @media (max-width:768px){
 	header{
 		 position:sticky;
@@ -282,5 +286,6 @@ header{
 	background-color:var(--bg-colour1);
 	width:100vw;
 	box-sizing: border-box;
+	z-index:7;
 }
 }
