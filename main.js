@@ -1,4 +1,4 @@
-// dev/main.js
+// main.js
 // Copyright (c) 2023 - 2024 daysant, Elysia MC - Elysia MC website
 // This file is licensed under the terms of the AGPL v3.0-or-later.
 // daysant@proton.me, discord.gg/RKAf97d5Ap
