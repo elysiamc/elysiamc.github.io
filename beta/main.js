@@ -97,7 +97,7 @@ function theme() {
     root.style.setProperty('--text-colour','black');
     root.style.setProperty('--bg-colour1','white');
     root.style.setProperty('--bg-colour2','#E4E4E4');
-    root.style.setProperty('--header-colour','#5A6F5D');
+    root.style.setProperty('--header-colour','#456f4a');
     document.getElementById('themeButton').innerHTML = '☀️';
   };
 };

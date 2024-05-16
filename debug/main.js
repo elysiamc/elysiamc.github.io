@@ -3,6 +3,8 @@
 // This file is licensed under the terms of the AGPL v3.0-or-later.
 // daysant@proton.me, discord.gg/RKAf97d5Ap
 
+var detailsAsked = false
+
 async function wipeData() {
   try {
     localStorage.clear();
@@ -31,3 +33,14 @@ async function showData() {
     document.getElementById('wipeData').innerHTML=`Error: ${error}`
   };
 };
+
+async function detailsAsk() {
+  detailsAsked=!detailsAsked
+  if (detailsAsked){
+    document.getElementById('detailsAsk').innerHTML = 'Ok.'
+    document.getElementById('details').style.display = 'block'
+  } else {
+    document.getElementById('detailsAsk').innerHTML = 'Why?'
+    document.getElementById('details').style.display = 'none'
+  }
+}

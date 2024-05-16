@@ -284,4 +284,12 @@ header{
 	box-sizing: border-box;
 	z-index:7;
 }
+
+  .branding-colour{
+    padding:1rem;
+    width:100%;
+    height:7rem;
+    box-sizing: border-box;
+    margin-top:1rem;
+  }
 }

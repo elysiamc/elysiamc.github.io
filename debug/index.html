@@ -19,16 +19,17 @@ daysant@proton.me, discord.gg/RKAf97d5Ap
   </style>
 </head>
 <body>
-  <h2>Debug panel</h2>
-  <div style="color:red;font-weight:bold;">WARNING! This should only be accessed for development purposes. If you are not a developer, please return to the <a style="color:red;" href="/">home page</a>.</div><br>
-  
-  <div>
-    <a onclick=wipeData()>Wipe localStorage</a>
+  <h1>Debug panel</h1>
+  <div style="color:red;font-weight:1000;font-size:1.5em;">WARNING!</div><span style="color:red;">This should only be accessed for development purposes. If you are not a developer, return to the <a style="color:red;" href="/">home page</a>.</span> <span style="color:red;font-weight:1000;">DO NOT SHOW ANYTHING ON THIS PAGE TO ANYONE.</span><br><br>
+  <a onclick="detailsAsk()" id="detailsAsk">Why?</a>
+  <div id="details" style="display:none;">This is because this is information of the website stored in your browser. Altering these could disrupt normal functioning. While unimportant now, they could become important at some point in the future. This warning is simply a pre-emptive warning against a future hypothetical attack.</div>
+  <div><br><br>
+    <a onclick=wipeData()>Wipe data</a>
     <div id="wipeData"></div>
   </div>
   <br>
   <div>
-    <a onclick=showData()>Display localStorage</a>
+    <a onclick=showData()>Display data</a>
     <div id="showData"></div>
   </div>
   <script src="main.js"></script>
