@@ -37,7 +37,7 @@ async function showData() {
 async function detailsAsk() {
   detailsAsked=!detailsAsked
   if (detailsAsked){
-    document.getElementById('detailsAsk').innerHTML = 'Ok.'
+    document.getElementById('detailsAsk').innerHTML = 'Okay.'
     document.getElementById('details').style.display = 'block'
   } else {
     document.getElementById('detailsAsk').innerHTML = 'Why?'
