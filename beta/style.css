@@ -222,14 +222,17 @@ header{
     grid-template-columns:33.333% 33.333% 33.333%;
     width:66.667vw;
   }
-  
-  .wordmark-container *{
+
+    .wordmark-container *{
     padding:1rem;
-    width:min-content;
+    margin:0.5rem;
+    box-sizing:border-box;
+    justify-content:center;
   }
 }
 
 @media (max-width:768px){
+
 	header{
 		 position:sticky;
 		 top:0;
