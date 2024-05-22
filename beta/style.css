@@ -48,6 +48,15 @@ body{
 	transition:all 0.1s ease-in-out;
 }
 
+	.logo{
+	  display:flex;
+	  align-items:center;
+	  justify-content:center;
+	  /*position:fixed;
+	  left:50%;
+	  transform:translateX(-50%);*/
+	}
+
 section{
 	background-color:var(--bg-colour1);
 }
@@ -126,6 +135,14 @@ header{
 	justify-content:space-between;
 }
 
+.logo{
+  width:4rem;
+  height:4rem;
+  background-color:var(--accent);
+}
+
+
+
 @media (min-width:769px){
 
   nav *{
@@ -137,12 +154,8 @@ header{
   	border:none;
   	padding:0;
   	transition:all 0.1s ease-in-out;
-  }
-  
-  .header-title{
-	  padding:1rem;
-	  font-size:2rem;
-	  font-weight:900;
+  	display:flex;
+  	flex-direction:row;
   }
   
   #hamburger{
@@ -175,11 +188,11 @@ header{
 		padding:1rem;
 		font-size:2rem;
 		font-weight:900;
-		flex-grow:1;
+		margin-right:auto;
 	}
-
-	.header-button{
-		display:block;
+  
+	nav button, nav .header-button{
+		display:flex;
 		height:100%;
 		width:10rem;
 		font-size:1.25rem;
@@ -189,9 +202,13 @@ header{
 		padding:0;
 		transition:all 0.1s ease-in-out;
 		font-family:'Ubuntu';
+		text-decoration:none;
+		justify-content:center;
+		align-items:center;
+		font-weight:500;
 	}
-
-	nav button:hover{
+	
+	nav button:hover, nav .button:hover{
 		background-color:var(--accent);
 		color:white;
 		transition:all 0.1s ease-in-out;
@@ -229,6 +246,10 @@ header{
     box-sizing:border-box;
     justify-content:center;
   }
+  
+  .logo-spacer{
+    display:none;
+  }
 }
 
 @media (max-width:768px){
@@ -239,12 +260,9 @@ header{
 		 z-index:5;
 	}
 
-    .header-title{
-	    padding:1rem;
-	    font-size:2rem;
-	    font-weight:900;
-		flex-grow:1;
-    }
+  .header-title{
+    display:none;
+  }
   
   nav {
     display:none;
@@ -298,6 +316,8 @@ header{
     color:var(--text-colour);
   	background-color:var(--bg-colour2);
   	border:none;
+  	/*position:fixed;
+  	right:0;*/
   }
 
   .cookie-notice{
@@ -335,5 +355,10 @@ header{
     width:calc(100vw-2rem);
     box-sizing:border-box;
     justify-content:center;
+  }
+  
+  .logo-spacer{
+    display:flex;
+    flex-grow:1;
   }
 }
